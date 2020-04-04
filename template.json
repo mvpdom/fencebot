@@ -1,0 +1,400 @@
+{
+  "messages": {
+    "message_start": "Здравствуйте! Здесь вы можете расчитать стоимость забора. Нажмите кнопку внизу",
+    "message_main": "Вы в главном меню",
+    "message_unknown_text": "Я не понимаю",
+    "message_wrong_not_int": "Введите целое число, без точек, запятых и других символов",
+    "message_wrong_not_float": "Введите целое число или используйте точку или запятую для указания дробной части. Не используйте других символов",
+    "message_input_fence_length": "Введите длину забора, м:",
+    "message_input_fence_height": "Для расчета высоты забора введите количество рядов кирпича\n(высота кирпича составляет 99 мм, высота фундамента над землей обычно составляет 250 мм).\n Введите количество рядов кирпича:",
+    "message_apply_fence_height": "Высота кирпичного столба составит: <b>{0}</b> рядов кирпича\nВысота кирпичного столба от фундамента составит: <b>{1:.2f}</b> м\nВысота кирпичного столба от земли (с учетом фундамента высотой 250 мм) составит: <b>{2:.2f}</b>\n\nУстраивает вас такая высота забора?",
+    "message_input_num_wicket": "Сколько калиток на данной стороне забора?",
+    "message_input_wicket_width": "Введите ширину калитки №{0}, м:",
+    "message_input_num_open_gate": "Сколько распашных ворот на данной стороне забора?",
+    "message_input_open_gate_width": "Введите ширину распашных ворот №{0}, м:",
+    "message_input_num_line_gate": "Сколько откатных ворот на данной стороне забора?",
+    "message_input_line_gate_width": "Введите ширину откатных ворот №{0}, м:",
+    "message_input_gate_and_wicket": "Ворота и калитка вместе или в разных местах?",
+    "message_print_wrong_input_gates_width": "Сумма ширин всех калиток и ворот не может быть больше общей длины забора. Введите данные заново",
+    "message_input_crossbar_length": "Введите расстояние между столбами (длина ригеля, обычно составляет 2.75-3.15), м:",
+    "message_print_num_crossbar": "Количество пролетов: <b>{0}</b>, шт\nДлина пролета: <b>{1:.2f}</b>, м",
+    "message_input_num_row_in_cell": "Введите количество рядов кирпича в пролете (продленка), ряд:",
+    "message_input_gap": "Есть ли перепады по высоте забора?",
+    "message_input_picket_type": "Заполнение в шахматном порядке (штакетник с 2-х сторон забора) или с зазором (штакетник с 1-ой стороны)?",
+    "message_input_ranch_type": "Заполнение в шахматном порядке (с 2-х сторон забора) или с зазором (с 1-ой стороны)?",
+    "message_apply_fence_parameters": "Вас устраивают заданные параметры забора?",
+    "message_input_metal_fence_material": "Выберите материал заполнения:",
+    "message_input_choose_picket_thickness": "Выберите толщину штакетника:",
+    "message_input_choose_picket_color": "Выберите цвет штакетника:",
+    "message_input_choose_profnastil_thickness": "Выберите толщину профнастила:",
+    "message_input_choose_profnastil_color": "Выберите цвет профнастила:",
+    "message_input_choose_ranch_thickness": "Выберите толщину металла:",
+    "message_input_choose_ranch_color": "Выберите цвет металла:",
+    "message_input_need_installation": "Нужен ли монтаж?",
+    "message_input_need_delivery": "Нужна ли доставка материалов на объект?",
+    "message_input_need_wicket_and_gate": "Нужна ли калитка или ворота?",
+    "message_apply_all_fence_material": "В расчетах указаны все материалы, необходимые для монтажа. Создать pdf отчет с данными параметрами?",
+    "message_create_pdf_report": "Здесь будет pdf отчет"
+  },
+  "buttons": {
+    "button_back": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD19Назад",
+      "actions": ""
+    },
+    "button_back_to_main_menu": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD1DВернуться в главное меню",
+      "actions": ""
+    },
+    "button_start_calc_fence": {
+      "type": "keyboard",
+      "text": "Рассчитать стоимость",
+      "actions": ""
+    },
+    "button_recalc_fence_height": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD03Пересчитать высоту забора",
+      "actions": ""
+    },
+    "button_reinput_gates_and_wicks_width": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD03Пересчитать",
+      "actions": ""
+    },
+    "button_yes": {
+      "type": "keyboard",
+      "text": "✅Да",
+      "actions": ""
+    },
+    "button_no": {
+      "type": "keyboard",
+      "text": "❌Нет",
+      "actions": ""
+    },
+    "button_value_0": {
+      "type": "keyboard",
+      "text": "0",
+      "actions": ""
+    },
+    "button_value_1": {
+      "type": "keyboard",
+      "text": "1",
+      "actions": ""
+    },
+    "button_value_2": {
+      "type": "keyboard",
+      "text": "2",
+      "actions": ""
+    },
+    "button_value_3": {
+      "type": "keyboard",
+      "text": "3",
+      "actions": ""
+    },
+    "button_value_4": {
+      "type": "keyboard",
+      "text": "4",
+      "actions": ""
+    },
+    "button_gate_and_wicket_together": {
+      "type": "keyboard",
+      "text": "Ворота и калитка вместе",
+      "actions": ""
+    },
+    "button_gate_and_wicket_split": {
+      "type": "keyboard",
+      "text": "Ворота и калитка в разных местах",
+      "actions": ""
+    },
+    "button_recalc_fence_params": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD03Пересчитать",
+      "actions": ""
+    },
+    "button_no_fill": {
+      "type": "keyboard",
+      "text": "Без заполнения",
+      "actions": ""
+    },
+    "button_profnastil": {
+      "type": "keyboard",
+      "text": "Заполнение профнастилом",
+      "actions": ""
+    },
+     "button_forging": {
+      "type": "keyboard",
+      "text": "Заполнение ковкой",
+      "actions": ""
+    },
+    "button_picket": {
+      "type": "keyboard",
+      "text": "Заполнение штакетником",
+      "actions": ""
+    },
+    "button_ranch": {
+      "type": "keyboard",
+      "text": "Заполнение ранчо",
+      "actions": ""
+    },
+     "button_picket_fence_chess": {
+      "type": "keyboard",
+      "text": "В шахматном порядке",
+      "actions": ""
+    },
+    "button_picket_fence_gap": {
+      "type": "keyboard",
+      "text": "С зазором",
+      "actions": ""
+    },
+     "button_ranch_fence_chess": {
+      "type": "keyboard",
+      "text": "В шахматном порядке",
+      "actions": ""
+    },
+    "button_ranch_fence_gap": {
+      "type": "keyboard",
+      "text": "С зазором",
+      "actions": ""
+    },
+    "button_thickness_45": {
+      "type": "keyboard",
+      "text": "0.45 мм",
+      "actions": ""
+    },
+    "button_thickness_53": {
+      "type": "keyboard",
+      "text": "0.53 мм",
+      "actions": ""
+    },
+    "button_color_golden_oak": {
+      "type": "keyboard",
+      "text": "Золотой дуб",
+      "actions": ""
+    },
+    "button_color_dark_walnut": {
+      "type": "keyboard",
+      "text": "Темный орех",
+      "actions": ""
+    },
+    "button_color_dark_cherry": {
+      "type": "keyboard",
+      "text": "Темная вишня",
+      "actions": ""
+    },
+    "button_color_ral_8017": {
+      "type": "keyboard",
+      "text": "Ral 8017",
+      "actions": ""
+    },
+    "button_color_ral_8014": {
+      "type": "keyboard",
+      "text": "Ral 8014",
+      "actions": ""
+    },
+    "button_color_ral_7016": {
+      "type": "keyboard",
+      "text": "Ral 7016",
+      "actions": ""
+    },
+    "button_color_ral_ads": {
+      "type": "keyboard",
+      "text": "ADS",
+      "actions": ""
+    },
+    "button_color_ral_9006": {
+      "type": "keyboard",
+      "text": "Ral 9006",
+      "actions": ""
+    },
+    "button_color_ral_3005": {
+      "type": "keyboard",
+      "text": "Ral 3005",
+      "actions": ""
+    },
+    "button_color_ral_6005": {
+      "type": "keyboard",
+      "text": "Ral 6005",
+      "actions": ""
+    },
+    "button_color_ral_5010": {
+      "type": "keyboard",
+      "text": "Ral 5010",
+      "actions": ""
+    },
+    "button_color_ral_9016": {
+      "type": "keyboard",
+      "text": "Ral 9016",
+      "actions": ""
+    },
+    "button_recalc_metal_fence_material": {
+      "type": "keyboard",
+      "text": "\uD83D\uDD03Пересчитать",
+      "actions": ""
+    }
+  },
+  "menus": {
+    "menu_only_back_or_text_input": ["button_back"],
+    "main_menu_kb": ["button_start_calc_fence"],
+    "menu_apply_fence_height": [
+      ["button_recalc_fence_height", "button_yes"]
+    ],
+    "menu_input_num_wicket": [
+      ["button_value_0", "button_value_1", "button_value_2"]
+    ],
+    "menu_input_num_open_gate": [
+      ["button_value_0", "button_value_1", "button_value_2"],
+      ["button_back"]
+    ],
+    "menu_input_num_line_gate": [
+      ["button_value_0", "button_value_1", "button_value_2"],
+      ["button_back"]
+    ],
+    "menu_gate_and_wicket_kb": [
+      ["button_gate_and_wicket_together", "button_gate_and_wicket_split"],
+      ["button_back"]
+    ],
+    "menu_fence_gap": [
+      ["button_yes", "button_no"]
+    ],
+    "menu_apply_fence_params": [
+      ["button_recalc_fence_params", "button_yes"]
+    ],
+    "menu_input_metal_fence_material": [
+      ["button_picket"],
+      ["button_profnastil"],
+      ["button_forging"],
+      ["button_ranch"],
+      ["button_no_fill"]
+    ],
+    "menu_input_picket_type": [
+      ["button_picket_fence_chess", "button_picket_fence_gap"],
+      ["button_back"]
+    ],
+    "menu_input_picket_thickness": [
+      ["button_thickness_45", "button_thickness_53"],
+      ["button_back"]
+    ],
+    "menu_input_choose_picket_color_45": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ],
+    "menu_input_choose_picket_color_53": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ],
+    "menu_input_need_installation": [
+      ["button_no", "button_yes"]
+    ],
+    "menu_input_need_delivery": [
+      ["button_no", "button_yes"]
+    ],
+    "menu_apply_all_fence_material": [
+      ["button_recalc_metal_fence_material", "button_yes"],
+      ["button_back_to_main_menu"]
+    ],
+    "menu_input_need_wicket_and_gate": [
+      ["button_no", "button_yes"]
+    ],
+    "menu_input_profnastil_thickness": [
+      ["button_thickness_45", "button_thickness_53"],
+      ["button_back"]
+    ],
+    "menu_input_choose_profnastil_color_45": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ],
+    "menu_input_choose_profnastil_color_53": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ],
+    "menu_input_ranch_type": [
+      ["button_ranch_fence_chess", "button_ranch_fence_gap"],
+      ["button_back"]
+    ],
+    "menu_input_ranch_thickness": [
+      ["button_thickness_45", "button_thickness_53"],
+      ["button_back"]
+    ],
+    "menu_input_choose_ranch_color_45": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ],
+    "menu_input_choose_ranch_color_53": [
+      ["button_color_golden_oak"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_walnut"],
+      ["button_color_dark_cherry"],
+      ["button_color_ral_8017"],
+      ["button_color_ral_8014"],
+      ["button_color_ral_7016"],
+      ["button_color_ral_ads"],
+      ["button_color_ral_9006"],
+      ["button_color_ral_3005"],
+      ["button_color_ral_6005"],
+      ["button_color_ral_5010"],
+      ["button_color_ral_9016"],
+      ["button_back"]
+    ]
+  }
+}
